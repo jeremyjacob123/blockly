@@ -187,7 +187,7 @@ Blockly.Dart['math_number_property'] = function(block) {
         Blockly.Dart.ORDER_EQUALITY],
     'PRIME': [null, Blockly.Dart.ORDER_NONE,
         Blockly.Dart.ORDER_UNARY_POSTFIX]
-  } 
+  };
   const dropdownProperty = block.getFieldValue('PROPERTY');
   const tuple = PROPERTIES[dropdownProperty];
   const suffix = tuple[0];
