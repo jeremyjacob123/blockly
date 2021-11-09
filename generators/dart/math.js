@@ -200,7 +200,7 @@ Blockly.Dart['math_number_property'] = function(block) {
     // Prime is a special case as it is not a one-liner test.
     Blockly.Dart.definitions_['import_dart_math'] =
         'import \'dart:math\' as Math;';
-        const functionName = Blockly.Dart.provideFunction_(
+   const functionName = Blockly.Dart.provideFunction_(
         'math_isPrime',
         ['bool ' + Blockly.Dart.FUNCTION_NAME_PLACEHOLDER_ + '(n) {',
          '  // https://en.wikipedia.org/wiki/Primality_test#Naive_methods',
@@ -221,7 +221,7 @@ Blockly.Dart['math_number_property'] = function(block) {
          '  }',
          '  return true;',
          '}']);
-    code = functionName + '(' + numberToCheck + ')';
+   code = functionName + '(' + numberToCheck + ')';
   } else if (dropdownProperty === 'DIVISIBLE_BY') {
     const divisor = Blockly.Dart.valueToCode(block, 'DIVISOR',
         Blockly.Dart.ORDER_MULTIPLICATIVE) || '0';
